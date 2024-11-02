@@ -1,5 +1,6 @@
 import time
 
+
 class Libro:
     books = []
     genre = "Libro"
@@ -12,7 +13,8 @@ class Libro:
         self.books.append(self)
 
     def showbook(self):
-        return f"Libro: {self.name} \n-Genero: {self.genre}\n-Autor: {self.autor}\n--Publicado: {self.yearpublish}\n---Rate: {self.rating}"
+        return (f"Libro: {self.name} \n-Genero: {self.genre}\n-Autor: {self.autor}\n--Publicado: {self.yearpublish}"
+                f"\n---Rate: {self.rating}")
 
     def changename(self, namereplace):
         self.name = namereplace
@@ -36,6 +38,7 @@ class Libro:
         self.changerank(input("Ingrese la nueva puntuacion: "))
         print("Editado correctamente!")
         time.sleep(3)
+
     def deleteBook(self):
         for i in Libro.books:
             if i == self:

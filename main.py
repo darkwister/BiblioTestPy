@@ -91,7 +91,11 @@ def main():
     run = True
     while run:
         clear()
-        print("Bienvenido a la biblioteca\n1.Crear libro\n2.Editar libro\n3.Eliminar libro\n4.Visualizar\n5.Salir")
+        print("Bienvenido a la biblioteca\n1.Crear libro"
+              "\n2.Editar libro\n"
+              "3.Eliminar libro\n"
+              "4.Visualizar\n"
+              "5.Salir")
         opt = int(input("Opcion: "))
         if opt == 1:
             clear()
